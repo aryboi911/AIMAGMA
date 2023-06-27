@@ -55,7 +55,7 @@ celltype <- c("CD14-positive_monocyte_treated_with_LPS_4h-Novakovic2016", "CD14-
 for(z in 1:6){
   ct = celltype[z]
 
-for(i in 11:22){
+for(i in 1:22){
 gene_chrom = paste0("chr", i)
 annot_tsv = paste0("/sc/arion/projects/load/users/pradha04/projects/aimagma/abc_magma/annotations/new_en/", ct, "/abc_magma_", gene_chrom, ".genes.annot")
 sumstats_bellenguez.hg19 = read_tsv(paste0("/sc/arion/projects/load/users/pradha02/Projects/AIMAGMA/Bellenguez/hg19/recoded/Bellenguez_hg19_", gene_chrom, ".tsv"))
