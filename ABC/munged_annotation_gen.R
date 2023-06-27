@@ -88,19 +88,3 @@ bellenguez_abc.annot %<>%
 unique(bellenguez_abc.annot) %>% write.table(annot_tsv, row.names = FALSE, col.names = FALSE, sep = " ", quote = FALSE)
 }
 }
-
-for(z in 1:6){
-  ct = celltype[z]
-
-gene <- read.table("/sc/arion/projects/load/users/pradha04/projects/aimagma/nott/magma_output/bellenguez/bellenguez_nott_chr1.genes.out", header = TRUE)
-
-for(i in 2:22){
-  gene1 <- read.table(paste0("/sc/arion/projects/load/users/pradha04/projects/aimagma/nott/magma_output/bellenguez/bellenguez_nott_chr", i, ".genes.out"), header = TRUE)
-  gene <- rbind(gene, gene1)
-}
-
-#gene <- separate(gene, GENE, into = c("GENE_LOC", "NR_ID", "GENE"), sep = "\\|")
-
-unique(gene) %>% write.table("/sc/arion/projects/load/users/pradha04/projects/aimagma/nott/magma_output/bellenguez/bellenguez_nott_chrall.genes.out", sep = "\t", row.names = FALSE, col.names = TRUE, quote = FALSE)
-
-}
