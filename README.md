@@ -1,1 +1,2 @@
-# AIMAGMA
+## AIMAGMA
+# Magma Runs
