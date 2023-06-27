@@ -1,6 +1,7 @@
 # AIMAGMA
 ### Magma Runs
 Run MAGMA with the following flags: 
+
 --bfile LD reference 
 
 --pval Sumstats use=Gene_id_column,pvalue_column ncol=n 
