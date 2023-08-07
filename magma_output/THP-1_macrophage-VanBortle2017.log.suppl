@@ -1,0 +1,13 @@
+##### #####  SNP p-value file  ##### #####
+# Following SNPs had duplications entries in file /sc/arion/projects/load/users/pradha04/projects/aimagma/abc_magma/data/whiteman/PGCALZ2sumstatsIncluding23andMeMETALNoUKB.chrall.CPRA_b37.tsv
+# All occurrences were dropped from analysis
+10:48642634:T:C
+11:51281228:G:A
+11:51571765:T:A
+19:55054024:A:T
+1:206236362:C:A
+22:49779591:C:T
+4:75497996:G:A
+6:62000310:A:T
+7:142205301:T:C
+7:74296375:G:A

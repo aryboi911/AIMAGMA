@@ -1,0 +1,39 @@
+Welcome to MAGMA v1.08 (linux/s)
+Using flags:
+	--bfile /sc/arion/projects/load/users/patelt16/projects/aimagma/20220714.aimagma/data/references/g1000_eur/g1000_eur_recodedSNP_allele
+	--pval /sc/arion/projects/load/users/pradha04/projects/aimagma/abc_magma/data/whiteman/PGCALZ2sumstatsIncluding23andMeMETALNoUKB.chrall.CPRA_b37.tsv use=ID,P ncol=N
+	--gene-annot /sc/arion/projects/load/users/pradha04/projects/aimagma/abc_magma/annotations/wightman/noUKB/THP-1_macrophage-VanBortle2017/abc_magma_chrall.genes.annot
+	--gene-model snp-wise=multi
+	--genes-only
+	--out /sc/arion/projects/load/users/pradha04/projects/aimagma/abc_magma/magma_output/wightman/noUKB/THP-1_macrophage-VanBortle2017
+
+Start time is 16:20:01, Tuesday 23 May 2023
+
+Loading PLINK-format data...
+Reading file /sc/arion/projects/load/users/patelt16/projects/aimagma/20220714.aimagma/data/references/g1000_eur/g1000_eur_recodedSNP_allele.fam... 503 individuals read
+Reading file /sc/arion/projects/load/users/patelt16/projects/aimagma/20220714.aimagma/data/references/g1000_eur/g1000_eur_recodedSNP_allele.bim... 22665064 SNPs read
+Preparing file /sc/arion/projects/load/users/patelt16/projects/aimagma/20220714.aimagma/data/references/g1000_eur/g1000_eur_recodedSNP_allele.bed... 
+
+Reading SNP p-values from file /sc/arion/projects/load/users/pradha04/projects/aimagma/abc_magma/data/whiteman/PGCALZ2sumstatsIncluding23andMeMETALNoUKB.chrall.CPRA_b37.tsv... 
+	detected 25 variables in file
+	using variable: ID (SNP id)
+	using variable: P (p-value)
+	using variable: N (sample size; discarding SNPs with N < 50)
+	read 14371161 lines from file, containing valid SNP p-values for 11039225 SNPs in data (76.82% of lines, 48.71% of SNPs in data)
+	WARNING: file contained 10 SNP IDs with duplications
+	         dropped all occurrences of each from analysis
+	         writing list of duplicated IDs to supplementary log file
+Filtering phenotype/covariate missing values... 503 individuals remaining
+Loading gene annotation from file /sc/arion/projects/load/users/pradha04/projects/aimagma/abc_magma/annotations/wightman/noUKB/THP-1_macrophage-VanBortle2017/abc_magma_chrall.genes.annot... 
+	13415 gene definitions read from file
+	found 13141 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using multi-model containing:
+		SNPwise-mean
+		SNPwise-top
+	writing gene analysis results to file /sc/arion/projects/load/users/pradha04/projects/aimagma/abc_magma/magma_output/wightman/noUKB/THP-1_macrophage-VanBortle2017.genes.out
+
+
+End time is 16:50:37, Tuesday 23 May 2023 (elapsed: 00:30:36)

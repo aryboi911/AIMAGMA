@@ -1,0 +1,39 @@
+Welcome to MAGMA v1.10 (linux/s)
+Using flags:
+	--bfile /sc/arion/projects/LOAD/Papers/2018-08-22.AD.myeloid/ldref.adgc/output/ADGC_2014.chrall.CPRA_b37
+	--burden all
+	--burden-weights /sc/arion/projects/load/users/pradha04/projects/aimagma/eQTL/annotations/bellenguez_eqtl_gene_sumstats/chr5/ENSG00000039319.tsv use=variant_alternate_id,z_score
+	--gene-annot /sc/arion/projects/load/users/pradha04/projects/aimagma/eQTL/annotations/bellenguez_eqtl_genes/chr5/ENSG00000039319.genes.annot
+	--gene-model snp-wise=multi
+	--genes-only
+	--out /sc/arion/projects/load/users/pradha04/projects/aimagma/eQTL/output/magma/bellenguez_eqtl/ENSG00000039319_burden
+
+Start time is 00:17:03, Thursday 29 Jun 2023
+
+Loading PLINK-format data...
+Reading file /sc/arion/projects/LOAD/Papers/2018-08-22.AD.myeloid/ldref.adgc/output/ADGC_2014.chrall.CPRA_b37.fam... 28730 individuals read
+	phenotype is binary, values of -9 and 0 will be considered missing values
+Reading file /sc/arion/projects/LOAD/Papers/2018-08-22.AD.myeloid/ldref.adgc/output/ADGC_2014.chrall.CPRA_b37.bim... 7388556 SNPs read
+Preparing file /sc/arion/projects/LOAD/Papers/2018-08-22.AD.myeloid/ldref.adgc/output/ADGC_2014.chrall.CPRA_b37.bed... 
+
+Reading SNP weights from file /sc/arion/projects/load/users/pradha04/projects/aimagma/eQTL/annotations/bellenguez_eqtl_gene_sumstats/chr5/ENSG00000039319.tsv... 
+	detected 33 variables in file
+	using variable: variant_alternate_id (SNP id)
+	using variable: z_score (weight)
+	read 5854 lines from file, containing SNP weights for 3993 SNPs in data
+	after setting defaults (default weight = 0) and filtering, 3993 SNPs remaining for analysis
+Filtering phenotype/covariate missing values... 25666 individuals remaining
+Loading gene annotation from file /sc/arion/projects/load/users/pradha04/projects/aimagma/eQTL/annotations/bellenguez_eqtl_genes/chr5/ENSG00000039319.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using multi-model containing:
+		SNPwise-mean
+		SNPwise-top
+	aggregating rare variants into burden score per gene, for SNPs with MAF <= 0.99 (normalized, weighted)
+	writing gene analysis results to file /sc/arion/projects/load/users/pradha04/projects/aimagma/eQTL/output/magma/bellenguez_eqtl/ENSG00000039319_burden.genes.out
+
+
+End time is 00:17:07, Thursday 29 Jun 2023 (elapsed: 00:00:04)
